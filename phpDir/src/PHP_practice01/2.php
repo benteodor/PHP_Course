@@ -25,22 +25,29 @@
 
 
 		  Step3: Make 2 Arrays with the same values, one regular and the other associative
+
 		 
-			 */
+		*/
 
-$number1 = 10;
-$number2 = 20;
+		$number1 = 10;
+		$number2 = 20;
 
-echo 'Addition: ' . $number1 + $number2;
- 
-$array1 = [$number1, $number2];
+		$sum = $number1 + $number2;
 
-$array = array (
-	$number1 => 10,
-	$number2 = 20
-);
+		echo "$number1 + $number2 = $sum";
+
+		$array1 = [$number1, $number2];
+		$array2 = ["number1" => $number1, "number2" => $number2];
+		echo "<br>" . $array1[0];
+		echo "<br>";
+		var_dump($array2)
+
+
+
 
 		?>
+
+
 
 	</article>
 	<!--MAIN CONTENT-->

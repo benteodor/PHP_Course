@@ -1,70 +1,70 @@
 <?php include "functions.php"; ?>
-<?php include "includes/header.php";?>
+<?php include "includes/header.php"; ?>
 
-	<section class="content">
+<section class="content">
 
 	<aside class="col-xs-4">
 
-	<?php Navigation();?>
-			
+		<?php Navigation(); ?>
+
 	</aside><!--SIDEBAR-->
 
 
-<article class="main-content col-xs-8">
+	<article class="main-content col-xs-8">
 
-<?php  
+		<?php
 
-/*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
+		/*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
 
-	Step 2: Make a forloop  that displays 10 numbers
+			Step 2: Make a forloop  that displays 10 numbers
 
-	Step 3 : Make a switch Statement that test againts one condition with 5 cases
- */
+			Step 3 : Make a switch Statement that test againts one condition with 5 cases
+ 		*/
 
- // Step1:
-echo 'Step1 <br/>';
-if (true) {
-	echo 'I love PHP';
-} else {
-	echo 'Read it through';
-}; 
-echo '<br/>';
+		$likePHP = true;
+		if ($likePHP) {
+			echo "I love PHP";
+		} else {
+			echo "I don't love PHP";
+		}
 
-echo 'Step2 <br/>';
+		echo "<br>";
 
-// Step2:
- for ($i = 1; $i <= 10; $i++) {
-    echo $i . ' ';
- }
- echo '<br/>';
+		for ($i = 0; $i < 10; $i++) {
+			echo $i . "<br>";
+		}
 
- // Step3:
- echo 'Step3 <br/>';
+		echo "<br>";
 
- $lang = 'PHP';
+		$lang = "PHP";
+		switch ($lang) {
+			case "Python":
+				echo "Python";
+				break;
+			case "Java":
+				echo "Java";
+				break;
+			case "C++":
+				echo "C++";
+				break;
+			case "C#":
+				echo "C#";
+				break;
+			case "PHP":
+				echo "PHP";
+				break;
+			default:
+				echo "No match";
+		}
 
- switch ($lang) {
-	case 'Java':
-		echo 'Mobile app';
-		break;
-	case 'JavaScript':
-		echo 'Web app';
-		break;
-    case 'PHP':
-		echo 'Web backend';
-		break;
-	case 'C++':
-		echo 'Gaming';
-		break;
-	case 'Python':
-		echo 'Data Science';
-		break;
-	default:
-		echo 'Somethng went wrong';
-		break;
- }
-?>
 
-</article><!--MAIN CONTENT-->
-	
-<?php include "includes/footer.php"; ?>
+		?>
+
+
+
+
+
+
+	</article><!--MAIN CONTENT-->
+
+	<?php include "includes/footer.php"; ?>

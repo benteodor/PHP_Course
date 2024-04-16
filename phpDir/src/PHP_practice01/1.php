@@ -15,19 +15,20 @@
 
     <?php
 
+
+
     /* 
 			 Step 1:  Use the Echo Function to say hello with html h1 tags embedded inside php
 
 		   Step 2: Write a comment above the echo function and explain
 		   what that function is doing.
-		*/
 
-// displays the result
-function firstFunction() {
-  echo "<h1>Hello!\n<h1>";
-}
 
-firstFunction(); 
+		  */
+
+    // Printing Hello World as a heading 1 using.
+    echo "<h1>Hello World</h1>";
+
     ?>
 
 

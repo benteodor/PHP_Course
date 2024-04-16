@@ -1,38 +1,41 @@
 <?php include "functions.php"; ?>
-<?php include "includes/header.php";?>
+<?php include "includes/header.php"; ?>
 
-	<section class="content">
+<section class="content">
 
 	<aside class="col-xs-4">
 
-		<?php Navigation();?>
-			
-		
+		<?php Navigation(); ?>
+
+
 	</aside><!--SIDEBAR-->
 
 
-<article class="main-content col-xs-8">
-
-	
-	<?php  
-
-/*  Step1: Define a function and make it return a calculation of 2 numbers
-
-	Step 2: Make a function that passes parameters and call it using parameter values
+	<article class="main-content col-xs-8">
 
 
- */
+		<?php
 
- $sum1and2 = fn() => 1 + 2;
- $sum = fn($a, $b) => $a + $b;
+		/*  
+			Step1: Define a function and make it return a calculation of 2 numbers
+			Step 2: Make a function that passes parameters and call it using parameter values
+ 		*/
 
- echo $sum1and2();
- echo '<br/>';
- echo $sum(1, 5);
-	
-?>
+		function add($num1, $num2)
+		{
+			return $num1 + $num2;
+		}
 
-</article><!--MAIN CONTENT-->
+		echo add(10, 20);
 
 
-<?php include "includes/footer.php"; ?>
+		?>
+
+
+
+
+
+	</article><!--MAIN CONTENT-->
+
+
+	<?php include "includes/footer.php"; ?>
