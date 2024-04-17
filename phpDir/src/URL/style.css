@@ -28,14 +28,14 @@ input[type="text"] {
   width: 80%;
   padding: 12px;
   margin: 10px 0;
-  border: 2px solid #007bff;
+  border: 2px solid green;
   border-radius: 20px;
   outline: none;
   transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus {
-  border-color: #0056b3;
+  border-color: green;
 }
 
 button {
@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: green;
 }
 
 .result {
@@ -65,5 +65,5 @@ button:hover {
 }
 
 .result a:hover {
-  color: #0056b3;
+  color: black;
 }
