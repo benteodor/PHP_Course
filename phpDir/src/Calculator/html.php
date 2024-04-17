@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="calculator">
+    <div class="Calculator">
       <h2>Simple Calculator</h2>
-      <form action="calculator.php" method="post">
+      <form action="" method="post">
         <input
           type="number"
           name="num1"
@@ -26,5 +26,31 @@
         <button type="submit" name="divide">Divide</button>
       </form>
     </div>
+
+    <?php
+
+class Calculator {
+    public function add($num1, $num2) {
+        return $num1 + $num2;
+    }
+
+    public function subtract($num1, $num2) {
+        return $num1 - $num2;
+    }
+
+    public function multiply($num1, $num2) {
+        return $num1 * $num2;
+    }
+
+    public function divide($num1, $num2) {
+        if ($num2 == 0) {
+            return "Error: Division by zero";
+        }
+        return $num1 / $num2;
+    }
+}
+
+?>
+
   </body>
 </html>
