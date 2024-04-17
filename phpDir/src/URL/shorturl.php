@@ -58,12 +58,12 @@ function shortenURL($longUrl, $accessToken) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $accessToken = '16|Luvo9pvtllzyPq2sojoeU3uz8gH6omV13Js1ah2s26e54053'; // Replace with your access token
+    $accessToken = '16|Luvo9pvtllzyPq2sojoeU3uz8gH6omV13Js1ah2s26e54053'; 
 
     $longUrl = $_POST['longUrl'];
     $shortUrl = shortenURL($longUrl, $accessToken);
 
-    echo 'Shortened URL: <a href="' . $shortUrl . '">' . $shortUrl . '</a>';
+    echo 'Here is the shortened URL: <a href="' . $shortUrl . '">' . $shortUrl . '</a>';
 }
 
 ?>
